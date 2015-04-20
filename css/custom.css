@@ -1,0 +1,56 @@
+/* Custom css for bgcolors, fontsizes and so forth *************/
+
+
+/* Header section *************/
+
+#headerview-1011-innerCt {
+    background-color:#6ae5f3;
+    padding: 15px 0 0 20px;
+}
+
+#headerview-1011-body {
+    background-color:#6ae5f3;
+    border: none;
+}
+
+#headerview-1011 h1 {
+    font-size: 50px;
+    font-weight: 200;
+    color: white;
+}
+
+
+
+
+
+
+/* Center section *************/
+
+.dataViewItem {
+    display: inline-block;
+    padding: 20px;
+}
+
+.dataViewItem img {
+    height: 120px;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+/* Footer section *************/
+
+#panel-1026-innerCt {
+    background-color:#6ae5f3;
+}
+
+#panel-1026-innerCt p {
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+}

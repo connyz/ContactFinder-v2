@@ -1,0 +1,16 @@
+[
+	{
+		"name": "John Doe",
+		"email": "someone@email.com",
+		"phone": "+46 5464 654",
+		"company": "Atls Inc",
+		"imglink": "resources/guy.jpg"
+	},
+	{
+		"name": "Ellie Sinedin",
+		"email": "ellie@email.com",
+		"phone": "+46 4335 954",
+		"company": "Buck Inc",
+		"imglink": "resources/girl.jpg"
+	}
+]
