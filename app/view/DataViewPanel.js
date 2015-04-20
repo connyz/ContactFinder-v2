@@ -27,7 +27,7 @@ Ext.define('CF.view.DataViewPanel', {
   }]
 });
 
-//git test 2
+//git test 3
 
 /*
 Ext.define('CF.view.ContactGrid', {
