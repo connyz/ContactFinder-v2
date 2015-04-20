@@ -17,7 +17,7 @@ Ext.define('CF.view.DataViewPanel', {
           '<p>Email: {email}</p>',
           '<p>Phone: {phone}</p>',
           '<p>Company: {company}</p>',
-          '<img src="{imglink}">',
+          '<p>Country: {country}</p>',
         '</div>',
       '</tpl>'
     ],
