@@ -5,7 +5,7 @@ Ext.define('CF.view.Main', {
 		'Ext.layout.container.Border',
 		'CF.view.HeaderView',
 		'CF.view.ContactGrid',
-		'CF.view.DataViewPanel',
+		'CF.view.DetailViewPanel',
 		'CF.view.GooglePanel',
 	],
 	xtype: 'app-main',
@@ -38,7 +38,7 @@ Ext.define('CF.view.Main', {
 					align: 'center',
 					items: [
 						{
-							xtype: 'dataviewpanel'
+							xtype: 'detailviewpanel'
 						},
 						{
 							xtype: 'googlepanel'
