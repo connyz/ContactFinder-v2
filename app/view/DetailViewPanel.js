@@ -19,8 +19,8 @@ Ext.define('CF.view.DetailViewPanel', {
       { name: "phone", fieldLabel: "Phone" },
       { name: "company", fieldLabel: "Company" },
       { name: "country", fieldLabel: "Country" }
-    ]
-    //autoHeight: true,
+    ],
+    height: 200
     //multiSelect: true,
   }]
 });
@@ -29,11 +29,6 @@ Ext.define('CF.view.DetailViewPanel', {
 
 /*
 
-    {name: 'name',  type: 'string'},
-    {name: 'email', type: 'string'},
-    {name: 'phone', type: 'string'},
-    {name: 'company', type: 'string'},
-    {name: 'imglink', type: 'string'}
 
 Ext.define("MVCWithExtJS4.view.ProjectActionItemDetailsPanel", {
   extend : "Ext.form.Panel",

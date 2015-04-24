@@ -5,8 +5,7 @@ Ext.define('CF.Application', {
 
 	models: [
 		// Todo: add models here
-		'Contact',
-		'DataView'
+		'Contact'
 	],
 
 	views: [
@@ -22,7 +21,6 @@ Ext.define('CF.Application', {
 
 	stores: [
 		// TODO: add stores here
-		'Contacts',
-		'DataViewStore'
+		'Contacts'
 	]
 });
