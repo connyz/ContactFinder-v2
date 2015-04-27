@@ -1,9 +1,9 @@
 Ext.define("CF.controller.MainController", {
-	extend: "Ext.app.Controller",
+	extend: "CF.controller.Base",
 	id: "MainController",
 	refs: [
-		{ ref: "contactGrid", selector: "home grid" },
-		{ ref: "contactDetailsPanel", selector: "home form" }
+		{ ref: "contactGrid", selector: "app-main grid" },
+		{ ref: "contactDetailsPanel", selector: "app-main form" }
 	],
 	models: [
 		"Contact"
@@ -18,63 +18,22 @@ Ext.define("CF.controller.MainController", {
 	],
 	init: function () {
 		this.control({
-			"home grid": {
-				itemclick: this.displayProjectActionItemDetails
-			}
-		});
-	},
-	displayProjectActionItemDetails: function (src, record) {
-		//console.log(record);
-		this.getActionItemDetailsPanel().loadRecord(record);
-	},
-	loadProjectActionItems: function () {
-		var store = Ext.getStore("ProjectActionItemStore");
-		store.load();
-		//console.log("error here?");
-		this.getActionItemsGrid().reconfigure(store);
-	}
-});
-
-/*
-
-Ext.define("MVCWithExtJS4.controller.HomeController", {
-	extend: "Ext.app.Controller",
-	id: "HomeController",
-	refs: [
-		{ ref: "actionItemsGrid", selector: "home grid" },
-		{ ref: "actionItemDetailsPanel", selector: "home form" }
-	],
-	models: [
-		"ProjectActionItem"
-	],
-	stores: [
-		"ProjectActionItemStore"
-	],
-	views: [
-		"ProjectActionItemDetailsPanel",
-		"ProjectActionItemGrid",
-		"HomeScreen"
-	],
-	init: function () {
-		this.control({
-			"home": {
+			"app-main": {
 				beforerender: this.loadProjectActionItems
 			},
-			"home grid": {
-				itemclick: this.displayProjectActionItemDetails
+			"app-main grid": {
+				itemclick: this.displayContactItemDetails
 			}
 		});
 	},
-	displayProjectActionItemDetails: function (src, record) {
-		//console.log(record);
-		this.getActionItemDetailsPanel().loadRecord(record);
+	displayContactItemDetails: function (src, record) {
+		//console.log("Record from item details: " + record);
+		this.getContactDetailsPanel().loadRecord(record);
 	},
 	loadProjectActionItems: function () {
-		var store = Ext.getStore("ProjectActionItemStore");
+		var store = Ext.getStore("Contacts");
 		store.load();
-		//console.log("error here?");
-		this.getActionItemsGrid().reconfigure(store);
+		//console.log("function called?");
+		this.getContactGrid().reconfigure(store);
 	}
 });
-
-*/
