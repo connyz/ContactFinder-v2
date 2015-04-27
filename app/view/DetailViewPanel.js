@@ -12,7 +12,11 @@ Ext.define('CF.view.DetailViewPanel', {
     border: false,
     defaults: {
       xtype: "textfield",
-      disabled: true
+      disabled: true,
+      style: {
+        marginBottom: '10px',
+        minWidth: '200'
+      }
     },
     items: [
       { name: "name", fieldLabel: "Name" },
@@ -21,7 +25,7 @@ Ext.define('CF.view.DetailViewPanel', {
       { name: "company", fieldLabel: "Company" },
       { name: "country", fieldLabel: "Country" }
     ],
-    height: 200
+    height: 300
     //multiSelect: true,
   }]
 });
